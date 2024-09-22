@@ -7,21 +7,24 @@
 */
 // 1) Importazione del componente
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+
 
 export default {
   data() {
     return { 
-      count: 0
+      
     }
   },
   // 2) Dichiarazione del componente
   components: {
-    AppHeader
+    AppHeader,
+    AppMain,
+    AppFooter
   },
   methods: {
-    incrementCount() {
-      this.count++;
-    }
+    
   }
 }
 </script>
@@ -31,11 +34,9 @@ export default {
     <!-- 3) Utilizzo del componente -->
     <AppHeader />
     
-    <main>
-      <button class="btn btn-primary" @click="incrementCount()">
-        {{ count }}
-      </button>
-    </main>
+    <AppMain />
+
+    <AppFooter />
   </div>
 </template>
 

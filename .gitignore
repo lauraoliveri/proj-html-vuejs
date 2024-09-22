@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Schema Progetto
+1. Inizio scaricando  la cartella immagine e tutto il materiale. fatto!
+2. Creo i file dei vari componenti.
+. Procedo facendo la struttura generale. ( Debug ).
+. Creo i dati nel js.
+. Suddivido il lavoro completando mano a mano le varie sezioni: Header, Main, Footer...
+. Dopo aver completato la parte grafica mi dedico a fare gli hover, le transition ecc.
+. Faccio la parte di javascript vue.
+. Dopo aver completato la parte di js mi dedico ai link.
+. Riguardo il codice per effettuare eventuali cambiamenti (indentatura, pulizia ecc).
