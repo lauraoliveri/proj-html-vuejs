@@ -7,7 +7,7 @@
 */
 // 1) Importazione del componente
 import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
+import AppMain from './components/Main/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 
 
