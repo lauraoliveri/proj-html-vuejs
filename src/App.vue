@@ -96,7 +96,7 @@ export default {
           ]
         }
         ],
-        Logo: 'assets/images/dark-logo.png',
+        Logo: 'src/assets/images/dark-logo.png',
         FooterMenu: [
           {
               category: "Explore",
@@ -141,7 +141,10 @@ export default {
 <template>
   <div>
     <!-- 3) Utilizzo del componente -->
-    <AppHeader />
+    <AppHeader 
+    
+    :HeaderMenu="HeaderMenu"
+    :Logo="Logo"/>
     
     <AppMain />
 
@@ -153,4 +156,16 @@ export default {
 @use 'assets/scss/main' as *;
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+// Colore dei link
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $MainGreen;
+}
+  
+
 </style>

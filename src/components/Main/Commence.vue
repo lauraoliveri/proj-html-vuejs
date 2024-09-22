@@ -27,7 +27,7 @@ export default {
 @use '../../assets/scss/partials/variables.scss' as *;
 
 section {
-  height: calc(100vh - 250px);
+  height: calc(100vh - 150px);
   background-color: aquamarine;
 }
 </style>
