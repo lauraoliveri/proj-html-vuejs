@@ -15,12 +15,14 @@ export default {
         <div class="col">
           <ul class="d-flex align-items-center">
             <li v-for="(item, i) in HeaderMenu" :key="i">
-             <a href="#">  {{ item.category }} &#x2304; </a>
+              <a href="#">  {{ item.category }} &#x2304; </a>
             </li>
           </ul>
         </div>
         <div class="col-auto">
-          <img :src="Logo" alt="">
+          <a href="https://maxcoach.thememove.com/main/">
+            <img :src="Logo" alt="Logo-Pagina">
+          </a>
         </div>
         <div class="col d-flex justify-content-end align-items-center">
           <div>

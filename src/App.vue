@@ -102,10 +102,15 @@ export default {
               category: "Explore",
               items: [
                 "Start here",
-                "Success story",
                 "Blog",
+                "About us"
+              ]
+          },
+          {
+              category: "ㅤ",
+              items: [
+                "Success story",
                 "Courses",
-                "About us",
                 "Contact us"
               ]
           },
@@ -119,13 +124,17 @@ export default {
               ]
           }
         ],
-        FooterContactInfo: [
-            "Address",
+        FooterContactInfo: [ {
+          type: 'Address',
+          info: [ 
             "382 NE 191st St # 87394 Miami, FL 33179-3899",
             "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
             "support@maxcoach.com"
+            ]
+        }
+          
         ],
-        Copyright: '© 2020 Maxcoach. All Rights Reserved'
+        Copyrights: '© 2020 Maxcoach. All Rights Reserved'
     };
   },
   // 2) Dichiarazione del componente
@@ -134,6 +143,7 @@ export default {
     AppMain,
     AppFooter
   }
+
 }
 
 </script>
@@ -145,10 +155,17 @@ export default {
     
     :HeaderMenu="HeaderMenu"
     :Logo="Logo"/>
+    <!-- Props da passare a AppHeader.vue qui sopra -->
     
     <AppMain />
 
-    <AppFooter />
+    <AppFooter 
+    :FooterMenu="FooterMenu"
+    :items="items"
+    :FooterContactInfo="FooterContactInfo"
+    :Copyrights="Copyrights"/>
+
+     <!-- Props da passare a AppFooter.vue qui sopra -->
   </div>
 </template>
 
