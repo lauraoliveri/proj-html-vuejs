@@ -37,6 +37,8 @@ section {
 
   h3 {
     font-size: 30px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    line-height: 0.5;
   }
 
   h2 {

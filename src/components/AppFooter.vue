@@ -1,5 +1,7 @@
 <script>
 export default {
+
+    // Props per passare i dati da App
     props: {
     FooterMenu: Array,
     FooterContactInfo: Array,
@@ -12,6 +14,9 @@ export default {
     <footer>
         <div class="container-fluid text-center">
             <div class="row align-items-start">
+
+                <!-- Colonna a sinistra -->
+                <!-- Contatti azienda (numero telefono, email...) -->
                 <div class="col-6 text-start footer_info">
                     <div v-for="(contact, i) in FooterContactInfo" :key="i">
                         <ul>
@@ -26,6 +31,9 @@ export default {
                         </ul>
                     </div>
                 </div>
+
+                <!-- Colonne a destra -->
+                <!-- Informazioni dell'azienda sottoforma di link (blog, termini di servizio, privacy ecc) -->
                 <div class="col text-start footer_info" v-for="(item, i) in FooterMenu" :key="i">
                     <ul>
                         <li>
@@ -39,11 +47,10 @@ export default {
                            </a>
                         </li>
                     </ul>
-                    <div>
-
-                    </div>
                 </div>
             </div>
+
+            <!-- Copyrights -->
             <div  class="row">
                 <div class="col text-center copyrights_footer">
                     {{ Copyrights }}
