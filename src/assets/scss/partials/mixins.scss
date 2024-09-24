@@ -1,13 +1,45 @@
 @use 'variables' as *;
 
-@mixin default-color {
-    color: $mainColor;
-}
-
-@mixin default-bg-color {
-    background-color: $mainColor;
-}
-
-@mixin title-bold-black-green {
+// Sottotitolo di ogni section
+// Da mettere dentro h6
+@mixin small_title {
+    color: $DarkGrey;
     
+    span {
+        font-weight: bolder;
+    }
+
+}
+// Per il titolo di ogni section in nero grassetto e verde
+// Da mettere in h1
+@mixin title-bold-black-green {
+    // h1
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 50px;
+    color: black;
+
+    // Per la parte verde non in grassetto
+    span {
+        color: $MainGreen;
+        font-family: 'Gilroy-Regular', sans-serif;
+    }
+}
+
+// Per la section
+@mixin section {
+    width: 100vw;
+    height: 700px;
+    background-color: $White;
+    padding: 50px 150px;
+}
+
+// Per contenitore principale
+@mixin my_container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+@mixin p_section {
+    line-height: 1.60;
 }

@@ -11,16 +11,24 @@ export default {
 
 <template>
   <section>
-      <div>
-        <h1>
-          Testo
-        </h1>
-      </div>
-      <div>
+      <div class="my_container">
+        <div>
+         <!-- Sottotitolo della section -->
+         <h6 class="text-uppercase">
+            Join MaxCoach at best
+          </h6>
 
-      </div>
-      <div>
-        testo
+          <!-- Titolo principale della section -->
+          <h1>
+            Latest Online <span>Courses</span>
+          </h1>
+        </div>
+        <div>
+
+        </div>
+        <div>
+          testo
+        </div>
       </div>
   </section>
 </template>
@@ -29,8 +37,28 @@ export default {
 @use '../../assets/scss/partials/variables.scss' as *;
 
 section {
-  height: 800px;
-  background-color: darkblue;
+  @include section;
+  height: 800px
+}
+
+.my_container {
+  @include my_container;
+  text-align: center;
+
+  div {
+
+    h6 {
+      @include small_title;
+    }
+    h1 {
+      @include title-bold-black-green
+    }
+
+    p {
+      @include p_section;
+    }
+  }
+
 }
 
 </style>

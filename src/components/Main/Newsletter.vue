@@ -46,33 +46,24 @@ export default {
 @use '../../assets/scss/partials/variables.scss' as *;
 
 section {
-  width: 100vw;
+  @include section;
   height: 350px;
-  background-color: $White;
-  padding: 50px 150px;
 }
 
 .my_container {
-  width: 90%;
-  margin: 0 auto;
+  @include my_container;
+  text-align: center;
   color: $DarkGrey;
 
   div {
     margin-bottom: 20px;
 
     h1 {
-      font-family: 'Gilroy-Bold', sans-serif;
-      font-size: 50px;
-      color: black;
-
-      span {
-        color: $MainGreen;
-        font-family: 'Gilroy-Regular', sans-serif;
-      }
+      @include title-bold-black-green
     }
 
     p {
-      line-height: 1.60;
+      @include p_section;
       margin-bottom: 40px;
     }
 
