@@ -179,13 +179,18 @@ export default {
 
 // Colore dei link
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
-    color: $MainGreen;
+  color: $MainGreen;
 }
-  
+
+// Quando seleziono qualcosa in pagina
+*::selection {
+  background-color: $MainGreen; /* Colore di sfondo verde */
+  color: $White;              /* Colore del testo bianco */
+  }
 
 </style>
