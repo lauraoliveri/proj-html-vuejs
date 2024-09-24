@@ -96,45 +96,134 @@ export default {
           ]
         }
         ],
-        Logo: 'src/assets/images/dark-logo.png',
-        FooterMenu: [
-          {
-              category: "Explore",
-              items: [
-                "Start here",
-                "Blog",
-                "About us"
-              ]
-          },
-          {
-              category: "ㅤ",
-              items: [
-                "Success story",
-                "Courses",
-                "Contact us"
-              ]
-          },
-          {
-              category: "Information",
-              items: [
-                "Membership",
-                "Purchase guide",
-                "Privacy policy",
-                "Terms of services"
-              ]
-          }
-        ],
-        FooterContactInfo: [ {
-          type: 'Address',
-          info: [ 
-            "382 NE 191st St # 87394 Miami, FL 33179-3899",
-            "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
-            "support@maxcoach.com"
+      Logo: 'src/assets/images/dark-logo.png',
+      FooterMenu: [
+        {
+            category: "Explore",
+            items: [
+              "Start here",
+              "Blog",
+              "About us"
+            ]
+        },
+        {
+            category: "ㅤ",
+            items: [
+              "Success story",
+              "Courses",
+              "Contact us"
+            ]
+        },
+        {
+            category: "Information",
+            items: [
+              "Membership",
+              "Purchase guide",
+              "Privacy policy",
+              "Terms of services"
             ]
         }
-          
+      ],
+      FooterContactInfo: [ {
+        type: 'Address',
+        info: [ 
+          "382 NE 191st St # 87394 Miami, FL 33179-3899",
+          "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
+          "support@maxcoach.com"
+          ]
+      }    
+      ],
+      Copyrights: '© 2020 Maxcoach. All Rights Reserved',
+      CourseCards: [
+        {
+        image: [
+          'src/assets/images/course-featured-image-01-480x298.jpg'
         ],
-        Copyrights: '© 2020 Maxcoach. All Rights Reserved'
+        price: [
+          '$0.00' 
+        ],
+        course_name: [
+          'Personal Finance: Financial Security Thinking & Principles'
+        ],
+        lessons: [
+          2
+        ],
+        students: [
+          326
+        ]
+      },
+      {
+        image: [
+          'src/assets/images/course-02-480x298.jpg'
+        ],
+        price: [
+          '$0.00'
+        ],
+        course_name: [
+        'Learning to Write as a Professional Author'
+        ],
+        lessons: [
+        20
+        ],
+        students: [
+        80
+        ]
+      },
+      {
+        image: [
+        'src/assets/images/stock-full-hd-03-480x298.jpg'
+        ],
+        price: [
+          '$0.00'
+        ],
+        course_name: [
+        'Customer-centric Info-Tech Strategies'
+        ],
+        lessons: [
+        24
+        ],
+        students: [
+        972
+        ]
+      },
+      {
+        image: [
+          'src/assets/images/stock-full-hd-04-480x298.jpg'
+        ],
+        price: [
+          '$19.00' 
+        ],
+        course_name: [
+          'Open Programming Courses for Everyone: Python'
+        ],
+        lessons: [
+        17
+        ],
+        students: [
+        66
+        ]
+      },
+      {
+        image: [
+          'src/assets/images/stock-full-hd-06-480x298.jpg'
+        ],
+        price: [
+          '$0.00' 
+        ],
+        course_name: [
+          'Academic Listening and Note-taking'
+        ],
+        lessons: [
+        14    
+        ],
+        students: [
+        73
+        ]
+      }
+    ]
+
+
+
     };
   },
   // 2) Dichiarazione del componente
