@@ -38,7 +38,7 @@ export default {
             <!-- Link -->
             <div>
               <a href="#">
-                <span class="bold_link">
+                <span class="bold_link text-decoration-underline">
                   View all &#8594;
                 </span>
               </a>

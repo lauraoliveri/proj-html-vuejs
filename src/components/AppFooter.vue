@@ -12,8 +12,8 @@ export default {
 
 <template>
     <footer>
-        <div class="container-fluid text-center">
-            <div class="row align-items-start">
+        <div class="my_container text-center">
+            <div class="row align-items-center">
 
                 <!-- Colonna a sinistra -->
                 <!-- Contatti azienda (numero telefono, email...) -->
@@ -29,6 +29,27 @@ export default {
                                 {{ infoItem }}
                             </li>
                         </ul>
+
+                        <span>
+                            <a href="#">
+                                <i class="bi bi-facebook fs-4"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <i class="bi bi-twitter fs-4"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <i class="bi bi-instagram fs-4"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <i class="bi bi-linkedin fs-4"></i>
+                            </a>
+                        </span>
                     </div>
                 </div>
 
@@ -64,9 +85,15 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 footer {
+    @include section;
     height: 400px;
-    background-color: $CoolGrey;
-    padding: 90px 300px;
+    background-color: $WarmGrey;
+}
+
+.my_container {
+    @include my_container;
+    width: 95%;
+    padding-top: 50px;
 
 }
 
@@ -93,8 +120,19 @@ h2 {
 
 .copyrights_footer {
     padding-top: 50px;
-    color: $LilacGrey;
+    color: $LightGrey;
 }
 
+// Icone e hover 
+span {
+    padding: 10px;
 
+    .bi {
+        color:$LightGrey;
+
+        &:hover {
+        color: $MainGreen;
+        }
+    }
+}
 </style>

@@ -17,9 +17,9 @@ export default {
 
       <!-- Colonna sinistra con immagini -->
       <div class="left_col">
-        <div>
+        <div class="img_container">
           <a href="#">
-            <img src="../../assets/images/stock-full-hd-11-670x450.jpg">
+            <img src="../../assets/images/stock-full-hd-11-670x450.jpg" class="zoom_img">
             <!-- PNG Youtube -->
             <img src="../../assets/images/icon-youtube-play.png" class="png_centered">
           </a>
@@ -134,5 +134,19 @@ section {
 .bold_link {
   font-family: 'Gilroy-Bold', sans-serif;
 }
+
+// Zoom img in hover
+.img_container {
+  overflow: hidden;
+  object-fit: cover;
+
+  &:hover .zoom_img{
+  transform: scale(1.03);
+  transition: transform 0.5s ease-in-out; 
+  }
+}
+
+
+
 
 </style>

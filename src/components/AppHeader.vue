@@ -26,15 +26,15 @@ export default {
         </div>
         <div class="col d-flex justify-content-end align-items-center">
           <div>
-            <i class="bi bi-cart2"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
           <div>
-            <i class="bi bi-person-circle"></i>
+            <i class="fa-regular fa-circle-user"></i>
           </div>
           <form class="d-flex" role="search">
             <input class="form-control me-2 d-flex" type="search" placeholder="Search..." aria-label="Search">
             <button class="btn" type="submit">
-              <i class="bi bi-search"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
 
@@ -77,9 +77,19 @@ input[type="search"] {
   border-radius: inherit;
 }
 
-.bi {
+.fa-light, .fa-regular {
   font-size: larger;
   padding: 0 5px;
+}
+
+button {
+  cursor: pointer;
+  color: $MainGreen;
+
+  &:hover {
+      background-color: $MainGreen;
+      color: $White;
+    }
 }
 
 

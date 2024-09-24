@@ -69,7 +69,7 @@ export default {
 
           <!-- Dentro il carosello -->
             <div class="carousel-inner">
-              <!-- v-for="(course, i) in store.CourseCards" :key="i" :class="index === currentIndex ? 'active' :''" -->
+              
               <!-- Singolo elemento dentro il carosello -->
               <div class="carousel-item" >
 
@@ -108,7 +108,17 @@ export default {
               </div>
             </div>
         </div>
-        
+        <div class="bottom_text">
+          <h6>
+            Control your personal reference settings to get notified about <br>
+            appropriate courses. 
+            <span>
+              <a href="#">
+                View all courses &#8594;
+              </a>
+            </span>
+          </h6>
+        </div>
       </div>
   </section>
 </template>
@@ -154,5 +164,15 @@ section {
   border-radius: 50%;   
   }
 
+}
+
+.bottom_text {
+  padding: 10px;
+  color: $DarkGrey;
+
+  span {
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: black;
+  }
 }
 </style>

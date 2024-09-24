@@ -21,7 +21,7 @@ import AppMain from './AppMain.vue';
         </div>
 
         <!-- Cards blogs -->
-        <div class="d-flex p-5 justify-content-center">
+        <div class="d-flex py-5 justify-content-center">
           <!-- Card -->
           <div class="card me-5" style="width: 25rem;">
             <div class="img_card_container">

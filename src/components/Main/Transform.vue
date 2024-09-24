@@ -47,7 +47,7 @@ export default {
 
             <!-- Link della guida -->
             <div>
-              <a href="#">
+              <a href="https://maxcoach.thememove.com/main/about-us-03/">
                 <button type="button" class="btn btn-primary">
                   Get Free Guide
                 </button>
@@ -117,8 +117,8 @@ section {
   font-weight: bold;
 
   &:hover {
-    background-color:$White;
-    color: $MainGreen;
+    background-color: $MainBlue;
+    color: $White;
   }
 }
 

@@ -87,6 +87,11 @@ form {
     border: 1px solid transparent;
     border-radius: inherit;
     font-size: 15px;
+
+    // Colore dell'input quando ci clicco sopra
+    &:focus {
+      border-color: $MainGreen;
+    }
   }
 
   button {
@@ -99,6 +104,11 @@ form {
     font-size: medium;
     border-radius: inherit;
     cursor: pointer;
+
+    &:hover {
+      background-color: $MainBlue;
+      color: $White;
+    }
   }
 }
 
