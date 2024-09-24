@@ -106,18 +106,20 @@ section {
   }
 }
 
+// Button
 .btn-primary {
-    background-color: $MainGreen;
-    color: $White;
-    margin-top: 25px;
-    padding: 18px 55px;
-    border: 0;
-    font-size: 14px;
-    font-weight: bold;
+  background-color: $MainGreen;
+  color: $White;
+  margin-top: 25px;
+  padding: 18px 55px;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
 
-    &:hover {
-      background-color:$White;
-      color: $MainGreen;
-    }
+  &:hover {
+    background-color:$White;
+    color: $MainGreen;
+  }
 }
+
 </style>
