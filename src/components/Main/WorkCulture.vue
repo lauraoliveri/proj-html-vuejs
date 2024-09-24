@@ -98,16 +98,13 @@ export default {
 
 
 section {
-  width: 100vw;
+  @include section;
   height: 800px;
-  background-color: $White;
   padding: 150px;
 }
 
 .my_container {
-  width: 90%;
-  margin: 0 auto;
-  text-align: left;
+  @include my_container;
 }
 
 // Colonna sinistra
@@ -119,25 +116,15 @@ section {
     line-height: 1.20;
     
     h6 {
-
-      span {
-        font-weight: bolder;
-      }
+      @include small_title;
     }
 
     h1 {
-      font-family: 'Gilroy-Bold', sans-serif;
-      font-size: 50px;
-      color: black;
-
-      span {
-        color: $MainGreen;
-        font-family: 'Gilroy-Regular', sans-serif;
-      }
+      @include title-bold-black-green;
     }
 
     p {
-      line-height: 1.60;
+      @include p_section;
     }
   }
 }
