@@ -134,6 +134,7 @@ span {
 
 .card {
   border: 0; 
+  background-color: $WarmGrey;
 }
 
 .img_card_container {
