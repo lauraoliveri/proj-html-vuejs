@@ -11,78 +11,75 @@ export default {
 
 <template>
     <section>
-
-<!-- Container di tutto -->
-  <div class="my_container d-flex">
-    <!-- Colonna a sinistra -->
-    <div class="left_col pe-4">
-      <div>
-        <!-- Sottotitolo della section -->
-        <h6 class="text-uppercase">
-          Testimonials
-        </h6>
-
-        <!-- Titolo principale della section -->
-        <h1>
-          Why Do People <br>
-          <span>*Hearts*</span> Us?
-        </h1>
-
-        <!-- Paragrafo della section -->
-        <p>
-          Seeking for verbals of our service quality? Find them here. <br>
-           Everything is transparent and straightforward for your sense <br>
-           of jusitifcation.
-        </p>
-      </div>
-
-      <!-- Link -->
-      <div>
-        <a href="#">
-          <span class="bold_link">
-            View all &#8594;
-          </span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Colonna destra con testimonianze -->
-    <div class="right_col">
-      <div class="ps-4">
-        <div>
-          <h5 class="text-bold">
-          Professional team of specialists and passionate <br>
-          mentors at reach
-        </h5>
-        </div>
-        <div>
-          <p>
-            I need to get a certification for English proficiency and <br>
-            MaxCoach is my best choice. Their tutors are smart and <br>
-            professional when dealing with students.
-          </p>
-        </div>
-
-        <!-- Informazioni del testimone -->
-         <div class="d-flex testimonial_info">
-          <div>
-            <img src="../../assets/images/testimonial-avata-01.jpg" alt="Testimonial pic">
-          </div>
-          <div>
-            <div class="text-uppercase">
-              Madley Pondor
-            </div>
+      <!-- Container di tutto -->
+        <div class="my_container d-flex">
+          <!-- Colonna a sinistra -->
+          <div class="left_col pe-4">
             <div>
-              / IT Specialist
+              <!-- Sottotitolo della section -->
+              <h6 class="text-uppercase">
+                Testimonials
+              </h6>
+
+              <!-- Titolo principale della section -->
+              <h1>
+                Why Do People <br>
+                <span>*Hearts*</span> Us?
+              </h1>
+
+              <!-- Paragrafo della section -->
+              <p>
+                Seeking for verbals of our service quality? Find them here. <br>
+                Everything is transparent and straightforward for your sense <br>
+                of jusitifcation.
+              </p>
+            </div>
+
+            <!-- Link -->
+            <div>
+              <a href="#">
+                <span class="bold_link">
+                  View all &#8594;
+                </span>
+              </a>
             </div>
           </div>
-         </div>
-      </div>
-    </div>
 
-  </div>
+          <!-- Colonna destra con testimonianze -->
+          <div class="right_col">
+            <div class="ps-4">
+              <div>
+                <h5 class="text-bold">
+                Professional team of specialists and passionate <br>
+                mentors at reach
+              </h5>
+              </div>
+              <div>
+                <p>
+                  I need to get a certification for English proficiency and <br>
+                  MaxCoach is my best choice. Their tutors are smart and <br>
+                  professional when dealing with students.
+                </p>
+              </div>
 
-</section>
+              <!-- Informazioni del testimone -->
+              <div class="d-flex testimonial_info">
+                <div>
+                  <img src="../../assets/images/testimonial-avata-01.jpg" alt="Testimonial pic">
+                </div>
+                <div>
+                  <div class="text-uppercase">
+                    Madley Pondor
+                  </div>
+                  <div>
+                    / IT Specialist
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
@@ -90,8 +87,8 @@ export default {
 
 section {
   @include section;
-  height: 800px;
-  padding: 150px;
+  height: 550px;
+  padding: 10px 150px;
 }
 
 .my_container {
@@ -127,7 +124,7 @@ section {
 // Colonna destra con testimonials
 
 .right_col {
-  width: 800px;
+  width: 700px;
   border-radius: 2px;
   padding: 30px;
   margin-left: 70px;
