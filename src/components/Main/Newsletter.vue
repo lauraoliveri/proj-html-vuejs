@@ -78,7 +78,6 @@ form {
   border-radius: 5px;
   margin: 0 auto;
 
-
   input[type="email"]  {
     width: calc(100% - 150px);
     background: transparent;
@@ -88,10 +87,13 @@ form {
     border-radius: inherit;
     font-size: 15px;
 
-    // Colore dell'input quando ci clicco sopra
+    // Colore dell'input quando ci clicco
     &:focus {
-      border-color: $MainGreen;
+    border-color: $MainGreen;
+    box-shadow: none;
+    background-color: $White;
     }
+
   }
 
   button {
