@@ -5,7 +5,8 @@ import AppMain from './AppMain.vue';
 export default {
   data() {
     return {
-      store
+      store,
+      currentIndex: 0
     }
   },
   methods: {
@@ -57,11 +58,11 @@ export default {
         <!-- Container carosello:class="{ active: i === 0 }" -->
         <div class="carousel slide"> 
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"  @click="prevSlide()">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" @click="nextSlide()">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -78,7 +79,7 @@ export default {
                   <div class="col-md-4">
 
                     <!-- Card del singolo corso -->
-                    <div class="card" v-for="(course, i) in store.CourseCards" :key="i">
+                    <div class="card" v-for="(course, i) in store.CourseCards" :key="i" :class=" currentIndex === 0 ? 'active' :''">
                       <!-- Immagine della card -->
                       <img :src="course.image" class="d-block w-100" alt="course image">
 
